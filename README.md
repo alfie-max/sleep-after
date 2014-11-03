@@ -1,7 +1,8 @@
 sleep-after
 -----------
 
-A simple python script to put your system to sleep/suspend
+A simple python script to put your system to sleep/suspend after
+specified amount of time
 
 Uses
 ----
@@ -9,7 +10,7 @@ Uses
 
 Usage
 -----
-`sudo sleep-after 10`
+`sleep-after 10`
 
 This will put your system to sleep after 10 minutes.
 Time interval argument is always in minutes.

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'sleep-after',
-    version = '0.1.0',
+    version = '0.2.0',
     author = 'Alfred Dominic',
     author_email = 'alfie.2012@gmail.com',
     packages = find_packages(exclude=[]),
