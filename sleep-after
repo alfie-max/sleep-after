@@ -5,12 +5,24 @@ import sys
 import time
 from getpass import getpass, getuser
 
+def convert_to_seconds(interval):
+    interval = interval.split(':')
+    s = m = h = 0
+
+    try:
+        s = interval[-1]
+        m = interval[-2]
+        h = interval[-3]
+    except IndexError:
+        pass
+
+    return int(s) + int(m)*60 + int(h)*60*60
+
+
 prompt = '[sudo] password for {0}: '.format(getuser())
 password = getpass(prompt)
-sys.stdout = None
-sys.stderr = None
 
-interval = float(sys.argv[1]) * 60
+interval = convert_to_seconds(sys.argv[1])
 time.sleep(interval)
 
 os.system('echo {0} | sudo -S pm-suspend'.format(password))

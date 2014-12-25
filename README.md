@@ -10,10 +10,26 @@ Uses
 
 Usage
 -----
+
+`sleep-after hh:mm:ss`
+
+
+Example :
+
 `sleep-after 10`
 
-This will put your system to sleep after 10 minutes.
-Time interval argument is always in minutes.
+This will put your system to sleep after 10 seconds.
+
+
+`sleep-after 15:10`
+
+This will put your system to sleep after 15 minutes and 10 seconds.
+
+
+`sleep-after 2:15:10`
+
+This will put your system to sleep 2 hours 15 minutes and 10 seconds.
+
 
 Installation
 ------------
